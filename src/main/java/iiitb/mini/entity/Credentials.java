@@ -6,23 +6,23 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
-
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "Faculty_Courses")
-public class FacultyCourses {
+@Table(name = "Credentials")
+public class Credentials {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id")
     private Long id;
 
-    @Column(name = "faculty") //foreign key
-    private Long faculty;
+    @Column(name = "email", unique = true, nullable = false)
+    private String email;
 
-    @Column(name = "course_id") //foreign key
-    private Long courseId;
+    @Column(name="password",nullable=false)
+    private String password;
+
 
 }

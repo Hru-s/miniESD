@@ -9,13 +9,10 @@ import lombok.Builder;
 @Builder
 public record ModifyRequest(
 
-    @JsonProperty("oldId")
-    Long oldId,
+
     @NotNull(message = "newId required")
-    @NotEmpty(message = "newId required")
-    @NotBlank(message = "newId required")
-    @JsonProperty("newId")
-    Long newId,
+    @JsonProperty("employeeId")
+    Long employeeId,
 
     @NotNull(message = "first name cannot be blank")
     @NotEmpty(message = "first name cannot be blank")
@@ -39,5 +36,11 @@ public record ModifyRequest(
     @NotEmpty(message = "title name cannot be blank")
     @NotBlank(message = "title name cannot be blank")
     @JsonProperty("title")
-    String title
+    String title,
+
+    @NotNull(message = "title name cannot be blank")
+    @NotEmpty(message = "title name cannot be blank")
+    @NotBlank(message = "title name cannot be blank")
+    @JsonProperty("department")
+    String department
 ){}

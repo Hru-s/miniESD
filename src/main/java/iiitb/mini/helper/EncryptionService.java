@@ -1,4 +1,4 @@
-package com.prashantjain.esdtestingprogram.helper;
+package iiitb.mini.helper;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;

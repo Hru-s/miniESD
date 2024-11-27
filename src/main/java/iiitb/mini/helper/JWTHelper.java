@@ -1,4 +1,4 @@
-package com.prashantjain.esdtestingprogram.helper;
+package iiitb.mini.helper;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
@@ -49,7 +49,7 @@ public class JWTHelper {
     // Create token with claims
     private String createToken(Map<String, Object> claims, String subject) {
         return Jwts.builder().setClaims(claims).setSubject(subject).setIssuedAt(new Date(System.currentTimeMillis()))
-                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 60)) // Token valid for 10 hours
+                .setExpiration(new Date(System.currentTimeMillis() + 1000 * 30*60)) // Token valid for 10 hours
                 .signWith(SignatureAlgorithm.HS256, SECRET_KEY).compact();
     }
 
