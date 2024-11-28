@@ -20,6 +20,9 @@ public class Employees {
     @Column(name="employee_id", unique = true, nullable = false)
     private Long employeeId;
 
+    @Column(name="password")
+    private String password;
+
     @Column(name="first_name")
     private String firstName;
 

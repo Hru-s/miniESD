@@ -45,6 +45,7 @@ public class ModifyService {
         Employees modifiedEmp = Employees.builder()
                 .id(originalEmp.getId())
                 .employeeId(modifyRequest.employeeId())
+                .password(originalEmp.getPassword())
                 .firstName(modifyRequest.firstName())
                 .lastName(modifyRequest.lastName())
                 .email(modifyRequest.email())

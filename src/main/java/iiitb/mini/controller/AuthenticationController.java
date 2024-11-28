@@ -22,9 +22,9 @@ public class AuthenticationController {
         return ResponseEntity.ok(loginService.login(request));
     }
 
-    @PostMapping("/create")
-    public ResponseEntity<String> createAdmin(@RequestBody @Valid LoginRequest request) {
-
-        return ResponseEntity.ok(loginService.createUser(request));
-    }
+//    @PostMapping("/create")
+//    public ResponseEntity<String> createAdmin(@RequestBody @Valid LoginRequest request) {
+//
+//        return ResponseEntity.ok(loginService.createUser(request));
+//    }
 }
