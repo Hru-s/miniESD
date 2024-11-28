@@ -1,10 +1,11 @@
 INSERT INTO Employees (id, employee_id, password, first_name, last_name, email, title, photograph_path, department)
 VALUES
-    (1, 101, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'John', 'Doe', 'john.doe@example.com', 'Manager', '/uploads/images/1.png', 'HR'),
-    (2, 102, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Jane', 'Smith', 'jane.smith@example.com', 'Software Engineer', '/uploads/images/2.png', 'IT'),
-    (3, 103, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Alice', 'Brown', 'alice.brown@example.com', 'Accountant', '/uploads/images/3.png', 'Finance'),
-    (4, 104, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Bob', 'Taylor', 'bob.taylor@example.com', 'Admin Officer', '/uploads/images/4.png', 'Administration'),
-    (5, 105, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Charlie', 'Johnson', 'charlie.johnson@example.com', 'Analyst', '/uploads/images/5.png', 'Marketing');
+    (1, 101, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'John', 'Doe', 'john.doe@example.com', 'Manager', 'uploads/images/1.png', 'HR'),
+    (2, 102, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Jane', 'Smith', 'jane.smith@example.com', 'Software Engineer', 'uploads/images/2.png', 'IT'),
+    (3, 103, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Alice', 'Brown', 'alice.brown@example.com', 'Accountant', 'uploads/images/3.png', 'Finance'),
+    (4, 104, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Bob', 'Taylor', 'bob.taylor@example.com', 'Admin Officer', 'uploads/images/4.png', 'Administration'),
+    (5, 105, '$2a$10$2H9YG8IXg/D2GzkUv9RCxe/OsOx0zOJwgxR7KNuSbx8t.JjXrEvwq', 'Charlie', 'Johnson', 'charlie.johnson@example.com', 'Analyst', 'uploads/images/5.png', 'Marketing');
+
 
 
 INSERT INTO Courses (course_code, name, description, year, term, faculty, credits, capacity)
